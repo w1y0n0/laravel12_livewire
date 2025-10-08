@@ -59,3 +59,10 @@ CLASS: app/Livewire//Catatan/Index.php
 VIEW:  D:\laragon\www\laravel12-livewire\resources\views/livewire/catatan\index.blade.php
 
 ======
+D:\laragon\www\laravel12-livewire>php artisan make:livewire Catatan/Create
+ COMPONENT CREATED  🤙
+
+CLASS: app/Livewire//Catatan/Create.php
+VIEW:  D:\laragon\www\laravel12-livewire\resources\views/livewire/catatan\create.blade.php
+
+======
