@@ -1,0 +1,61 @@
+D:\laragon\www\laravel12-livewire>php artisan migrate
+
+   INFO  Preparing database.
+
+  Creating migration table ............................................................................... 891.22ms DONE
+
+   INFO  Running migrations.
+
+  0001_01_01_000000_create_users_table ................................................................... 947.05ms DONE
+  0001_01_01_000001_create_cache_table ................................................................... 310.13ms DONE
+  0001_01_01_000002_create_jobs_table .................................................................... 900.45ms DONE
+  2025_09_22_145432_add_two_factor_columns_to_users_table ................................................ 218.32ms DONE
+
+======
+D:\laragon\www\laravel12-livewire>composer run dev
+> Composer\Config::disableProcessTimeout
+> npx concurrently -c "#93c5fd,#c4b5fd,#fdba74" "php artisan serve" "php artisan queue:listen --tries=1" "npm run dev" --names='server,queue,vite'
+[vite]
+[vite] > dev
+[vite] > vite
+[vite]
+[queue]
+[queue]    INFO  Processing jobs from the [default] queue.
+[queue]
+[server]
+[server]    INFO  Server running on [http://127.0.0.1:8000].
+[server]
+[server]   Press Ctrl+C to stop the server
+[server]
+[vite]
+[vite]   VITE v7.0.6  ready in 4761 ms
+[vite]
+[vite]   ➜  Local:   http://localhost:5173/
+[vite]   ➜  Network: use --host to expose
+[vite]
+[vite]   LARAVEL v12.33.0  plugin v2.0.0
+[vite]
+[vite]   ➜  APP_URL: http://localhost:8000
+
+======
+D:\laragon\www\laravel12-livewire>php artisan make:model Catatan -m
+
+   INFO  Model [D:\laragon\www\laravel12-livewire\app\Models\Catatan.php] created successfully.
+
+   INFO  Migration [D:\laragon\www\laravel12-livewire\database\migrations\2025_10_08_053256_create_catatans_table.php] created successfully.
+
+======
+D:\laragon\www\laravel12-livewire>php artisan migrate
+
+   INFO  Running migrations.
+
+  2025_10_08_053256_create_catatans_table ............................................................... 856.58ms DONE
+
+======
+D:\laragon\www\laravel12-livewire>php artisan make:livewire Catatan/Index
+ COMPONENT CREATED  🤙
+
+CLASS: app/Livewire//Catatan/Index.php
+VIEW:  D:\laragon\www\laravel12-livewire\resources\views/livewire/catatan\index.blade.php
+
+======
