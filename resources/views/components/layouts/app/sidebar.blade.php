@@ -19,7 +19,7 @@
                 <flux:navlist.item icon="home" :href="route('dashboard')" :current="request()->routeIs('dashboard')"
                     wire:navigate>{{ __('Dashboard') }}</flux:navlist.item>
                 {{-- Menu Catatan --}}
-                <flux:navlist.item icon="notebook-text" :href="route('catatans')" :current="request()->routeIs('catatans')"
+                <flux:navlist.item icon="notebook-pen" :href="route('catatans')" :current="request()->routeIs('catatans')"
                     wire:navigate>{{ __('Catatan') }}</flux:navlist.item>
 
             </flux:navlist.group>
